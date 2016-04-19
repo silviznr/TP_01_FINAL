@@ -10,11 +10,17 @@
 
 body{
 	font-family: 'Raleway', sans-serif;
-	margin: 0;
+	margin: 0 auto;
 }
 
 a{
 	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 header{
@@ -47,7 +53,6 @@ nav a{
 	font-size: 12px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	text-decoration: none;
 }
 
 nav a.active {
@@ -58,12 +63,12 @@ nav a.active {
 	margin-top: 60px;
 	min-height: 500px;
 	background:  url(../images/indexbanner-bg2.jpg) no-repeat center top scroll ;
-	
+
 }
 
 .wrapper {
 	max-width: 1200px; 
-	margin: auto;
+	margin: 0 auto;
 }
 
 
@@ -101,19 +106,20 @@ nav a.active {
 }
 
 .formulario{
-	width: 100%;
-	margin: 10px 10px 60px;
+	width: 97%;
+	margin: 0 auto;
 	position: relative;
 
 }
 
-.columa-der{
-	width: 50%;
-	margin-right: 40px;
+.columa-izq{
+	width: 49%;
+	float: left;
 
 }
 
-.columa-der input[type=text] {
+.columa-izq input[type=text] {
+	display: block;
 	width: 100%;
 	height: 50px;
 	border-radius: 5px;
@@ -124,6 +130,12 @@ nav a.active {
 	margin-bottom: 15px;
 
 } 
+
+.columa-der{
+	width: 49%;
+	float: right;
+}
+
 
 .formulario input[type=text]:focus {
     border: 1px solid #00AFF4;
@@ -163,18 +175,21 @@ nav a.active {
 	border: none;
 	border-radius: 5px;
 	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	display: block;	
 	
 }
 
 /*FOOTER*/
 
 .box1 {
+	width: 100%;
 	background-color: #142e3f; 
 	height: 225px;
 }
 
 .box1 p {
-	width: 100%;
 	text-align: center; 
 	color: white; 
 	font-size: 30px; 
@@ -189,6 +204,7 @@ nav a.active {
 }
 
 .box2 {
+	width: 100%;
 	background-color: #091722; 
 	height: 110px; 
 	color: white; 
@@ -209,3 +225,117 @@ nav a.active {
 .menu li{
 	display: inline-block;
 }
+
+
+
+/*MEDIA QUERIES*//////
+
+@media (max-width: 860px) {
+	.wrapper{
+		width: 96%;
+	}
+	
+	header {
+		display: inline-block;
+		margin: 0px auto;
+		float: none;
+	}
+	
+	}
+	.box1 p{
+		width: 70%;
+	}
+	.menu {
+		text-align: center;
+		float:none;
+		display: block;
+}
+
+}
+
+@media (max-width: 700px){
+	.wrapper {
+		width: 96%;
+	}
+	header{
+		position: static;
+		text-align: center;
+	}
+	header nav{
+		display: block;
+		margin-left: 0;
+	}
+	header nav li{
+		display: block;
+		padding: 10px 0;
+	}
+
+	.contenedor-inicial{
+		margin-top: 0;
+		background: none;
+	}
+	.main-title, .main-title + p{
+		display: none;
+	}
+	.buscador{
+		margin-top: 0;
+	}
+	.servicios-destacados article{
+		width: 50%;
+	}
+	.caracteristicas{
+		float: none;
+		width: 100%;
+	}
+	.caract-izq article{
+		padding-right: 0;
+		padding-left: 60px;
+		text-align: left;
+	}
+	.caract-izq article img{
+		left: 0;
+		right: auto;
+	}
+	.imagen-mitad{
+		float: none;
+		width: 50%;
+		margin: 50px auto;
+	}
+	.contenedor-secundario{
+		background-size: 100%;
+		margin-top: 30px;
+	}
+	.box-price {
+		width: 46.6666666%;
+		text-align: center;
+	}
+
+}
+
+
+@media (max-width: 480px) {
+	.buscador input[type=submit]{
+		width: 25%;
+	}
+	.servicios-destacados{
+		margin-top: 40px;
+	}
+	.servicios-destacados article{
+		float: none;
+		width: 100%;
+	}
+	.contenedor-secundario h2{
+		padding-top: 30px;
+	}
+	.pricing-boxes{
+		margin-top: 50px;
+	}
+	.box-price{
+		float: none;
+		width: 70%;
+		margin: 30px auto;
+	}
+
+
+}
+

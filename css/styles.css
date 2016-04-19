@@ -12,7 +12,7 @@
 
 body{
 	font-family: 'Raleway', sans-serif;
-	margin: 0;
+	margin: 0 auto;
 }
 
 a{
@@ -316,7 +316,7 @@ table, td, tr{
 	display: inline-block;
 	vertical-align: top;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 600;
 	position: relative;
 	top: 5px;
 }
@@ -374,6 +374,7 @@ table, td, tr{
 /*FOOTER*/
 
 .box1 {
+	width: 100%;
 	background-color: #142e3f; 
 	height: 225px;
 }
@@ -394,6 +395,7 @@ table, td, tr{
 }
 
 .box2 {
+	width: 100%;
 	background-color: #091722; 
 	height: 110px; 
 	color: white; 
@@ -422,26 +424,33 @@ table, td, tr{
 /*MEDIA QUERIES*//////
 
 @media (max-width: 860px) {
-	.wrapper {
-		width: 96%;
+	.wrapper{
+		width: 80%;
 	}
-	header nav{
+	
+	header {
 		display: inline-block;
+		margin: 0px auto;
 		float: none;
-		margin-left: 18%;
+		
 	}
 	.servicios-destacados article{
 		width: 50%;
 		min-height: 380px;
 	}
-	.box-price {
-		width: 46.666666%;
-		margin-right: 2.5%;
-		margin-bottom: 18%;
+
+	.box-price{
+		width: 45%;
+		margin: 2.5%;
 	}
 	.box1 p{
 		width: 70%;
 	}
+	.menu {
+		text-align: center;
+		float:none;
+		display: block;
+}
 
 }
 
