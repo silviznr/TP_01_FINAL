@@ -243,13 +243,28 @@ nav a.active {
 	
 	}
 	.box1 p{
-		width: 70%;
+		width: 100%;
+	}
+	.box2 p{
+		width: 100%;
+		padding: 0;
+		text-align: center;
 	}
 	.menu {
 		text-align: center;
 		float:none;
 		display: block;
-}
+	}
+	
+	.menu ul{
+		display: inline-block;
+		margin: 0;
+	}
+	.menu li{
+		display: inline-block;
+		margin: 0;
+		padding-right: 15px;
+	}
 
 }
 
@@ -263,11 +278,14 @@ nav a.active {
 	}
 	header nav{
 		display: block;
-		margin-left: 0;
+		float: none;	
 	}
+	
 	header nav li{
 		display: block;
+		text-align: center;
 		padding: 10px 0;
+		margin: 0;
 	}
 
 	.contenedor-inicial{
@@ -309,33 +327,32 @@ nav a.active {
 		width: 46.6666666%;
 		text-align: center;
 	}
+	.box1 p{
+		width: 100%;
+	}
+	.box2 {
+		width: 100%;
+		text-align: center;
+	}
 
 }
 
 
 @media (max-width: 480px) {
-	.buscador input[type=submit]{
-		width: 25%;
+	.contenedor-inicial{
+		display: none;
 	}
-	.servicios-destacados{
-		margin-top: 40px;
+	.contenedor-form{
+	margin-top: 100px;
 	}
-	.servicios-destacados article{
-		float: none;
+	.columa-izq{
 		width: 100%;
 	}
-	.contenedor-secundario h2{
-		padding-top: 30px;
-	}
-	.pricing-boxes{
-		margin-top: 50px;
-	}
-	.box-price{
+	.columa-der{
+		width: 100%;
 		float: none;
-		width: 70%;
-		margin: 30px auto;
+		display: block;
 	}
-
-
+	
 }
 
