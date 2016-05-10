@@ -38,10 +38,6 @@ header{
 	z-index: 600;	
 }
 
-.cleaner{
-	clear: both;
-}
-
 nav{
 	float: right;
 }
@@ -62,6 +58,10 @@ nav a.active {
 	color: #10293B;
 }
 
+.cleaner{
+	clear: both;
+}
+
 .contenedor-inicial{
 	margin-top: 60px;
 	min-height: 500px;
@@ -79,6 +79,7 @@ nav a.active {
 	font-size: 40px;
 	margin: 280px 0 0;
 	display: inline-block;
+	text-align: left;
 }
 
 
@@ -190,9 +191,6 @@ nav a.active {
 	width: 29.16%;
 }
 
-.caracteristicas article{
-	
-}
 
 .imagen-mitad{
 	width: 25%;
@@ -371,6 +369,123 @@ table, td, tr{
 	letter-spacing: 2px;
 }
 
+/*/////////////////// Contacto //////////////////*/
+.contenedor-superior{ 
+	margin-top: 60px;
+	min-height: 500px;
+	background:  url(../images/indexbanner-bg2.jpg) no-repeat center top scroll ;
+	text-align: center;
+}
+
+.wrapper {
+	max-width: 1200px; 
+	margin: 0 auto;
+}
+
+
+.contact-title {
+	color: #fff; 
+	font-size: 40px; 
+	display: inline-block; 	
+	margin: 180px 0 auto;
+}
+
+.contact-description{
+	color: #fff;
+	font-size: 18px;
+	width: 700px;
+	line-height: 37px;
+	text-align: center;
+	margin: 0 auto;
+}
+	
+
+.contenedor-form h2{
+	font-size: 32px;
+	text-align: center;
+	margin: 50px 0 10px;
+	color: #1A2D3B;
+	font-weight: bold;
+}
+
+.contenedor-form p{
+	text-align: center;
+	font-size: 18px;
+	color: #A2A3A6;
+	padding-bottom: 50px;
+}
+
+.formulario{
+	width: 97%;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.columna-izq{
+	width: 49%;
+	float: left;
+}
+
+.columna-izq input[type=text] {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	font-family: inherit;
+	font-size: 12px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+} 
+
+.columna-der{
+	width: 49%;
+	float: right;
+}
+
+.formulario input[type=text]:focus {
+    border: 1px solid #00AFF4;
+    border-radius: 5px;
+}
+
+.formulario textarea{
+	width: 100%;
+    height: 180px;
+    padding: 12px 20px;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-family: inherit;
+	font-size: 12px;
+	top: 0;
+	right: 0;
+}
+
+.formulario textarea:focus {
+    border: 1px solid #00AEF4;
+    border-radius: 5px;
+}
+
+.formulario button{
+	width: 14%;
+	height: 50px;
+	background-color: #00ADF3;
+	color: #fff;
+	font-family: inherit;
+	font-size: 12px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	display: block;	
+	
+}
+
+
 /*FOOTER*/
 
 .box1 {
@@ -428,10 +543,10 @@ table, td, tr{
 		width: 80%;
 	}
 	
-	header {
+	header nav{
 		display: inline-block;
-		margin: 0px auto;
-		float: none;	
+		float: none;
+		margin-left: 18%;
 	}
 
 	.servicios-destacados article{
@@ -595,17 +710,49 @@ table, td, tr{
 	.buscador button{
 		width: 20%;
 	}
+}
+
+
+
+
+
+/* /// MEDIA QUERIES de CONTACTO /// */	
+@media (max-width: 700px){
+	.contenedor-superior{
+		display: none;
+	}
+
+	.columna-izq{
+		width: 100%;
+		float: none;
+	}
+	.columna-der{
+		width: 100%;
+		float: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.contenedor-superior{
+		display: none;
+	}
 	
+	.columna-izq{
+		width: 100%;
+		display: block;
+		float: none;
+	}
+	.columna-der{
+		width: 100%;
+	}
+	.formulario textarea{
+		width: 100%;
+		float: none;
+		position: relative;
+		margin: auto;
+	}
+	.formulario button{
+	width: 30%;
+	}
 }
-
-
-@media (max-width: 640px) and (orientation: landscape) {
-
-}
-
-portrait 
-
-
-
-
 
